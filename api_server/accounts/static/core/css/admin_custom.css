@@ -1,0 +1,30 @@
+/* Make the user avatar in the Jazzmin header and sidebar round */
+.user-panel img,
+.user-menu img,
+.nav-sidebar .user-panel img,
+.sidebar .user-panel .image img,
+.sidebar .image img,
+.user-panel .image,
+.user-panel .image img {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    aspect-ratio: 1/1 !important;
+    overflow: hidden !important;
+}
+
+/* Fix for the specific sidebar user panel in the screenshot */
+.user-panel.d-flex .image {
+    width: auto !important;
+}
+
+.user-panel.d-flex .image img {
+    width: 60px !important; 
+    height: 60px !important;
+    border: 2px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Standard thumbnails */
+.field-avatar_tag img, .admin-avatar {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
